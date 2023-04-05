@@ -1,5 +1,11 @@
 pandas 
 seaborn
 numpy
+matplotlib
+scipy
+sklearn
+statsmodels
+scikit-learn
 
--e .
+
+# -e .
