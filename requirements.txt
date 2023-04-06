@@ -6,6 +6,7 @@ scipy
 sklearn
 statsmodels
 scikit-learn
-
-
+catboost
+xgboost
+dill
 -e .
