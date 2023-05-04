@@ -76,6 +76,7 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+.notebook_multiple_linear_regression.ipynb
 
 # IPython
 profile_default/
