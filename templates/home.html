@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Health Data Prediction</title>
+
+      </head>
+  <body>
+    <legend>Cancer Deathrate Prediction</legend>
+
+
+    
+    
+    <form action="{{ url_for('predict_datapoint') }}" method="post">
+
+      <label for="incidencerate">Incidence Rate:</label>
+      <input type="number" id="incidencerate" name="incidencerate"><br><br>
+      <label for="studypercap">Study Per Capita:</label>
+      <input type="number" id="studypercap" name="studypercap"><br><br>
+      <label for="medianage">Median Age:</label>
+      <input type="number" id="medianage" name="medianage"><br><br>
+
+      <label for="pctnohs18_24">Percentage No High School Education (18-24):</label>
+      <input type="number" id="pctnohs18_24" name="pctnohs18_24"><br><br>
+
+
+      <label for="pcths18_24">Percentage High School Education (18-24):</label>
+      <input type="text" id="pcths18_24" name="pcths18_24"><br><br>
+      <label for="pctbachdeg18_24">Percentage Bachelor's Degree Education (18-24):</label>
+      <input type="text" id="pctbachdeg18_24" name="pctbachdeg18_24"><br><br>
+      <label for="pcths25_over">Percentage High School Education (25 and over):</label>
+      <input type="text" id="pcths25_over" name="pcths25_over"><br><br>
+      <label for="pctunemployed16_over">Percentage Unemployed (16 and over):</label>
+      <input type="text" id="pctunemployed16_over" name="pctunemployed16_over"><br><br>
+      <label for="pctprivatecoveragealone">Percentage Private Coverage Alone:</label>
+      <input type="text" id="pctprivatecoveragealone" name="pctprivatecoveragealone"><br><br>
+      <label for="pctasian">Percentage Asian:</label>
+      <input type="text" id="pctasian" name="pctasian"><br><br>
+      <label for="pctotherrace">Percentage Other Race:</label>
+      <input type="text" id="pctotherrace" name="pctotherrace"><br><br>
+      <label for="birthrate">Birth Rate:</label>
+      <input type="number" id="birthrate" name="birthrate"><br><br>
+      <input type="submit" value="Predict the Value Rate" required/>
+    </form>
+    <h2>
+        The Prediction is: {{results}}
+
+    </h2>
+  </body>
+</html>
